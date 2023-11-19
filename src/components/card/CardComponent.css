@@ -1,0 +1,54 @@
+.all-cards {
+    width: auto;
+    height: 100vh;
+    margin: 30px;
+}
+
+.card-container {
+    /* background-color: bisque; */
+    height: 62vh;
+    width: 50vh;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 30px;
+}
+
+.img-container,
+.book-button {
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    height: 30vh;
+    width: 30vh;
+}
+
+.name {
+    margin: 0;
+    padding: 15px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.address {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.offer {
+    display: flex;
+}
+
+.offer-img {
+    margin: 8px;
+}
+
+.book {
+    height: 5vh;
+    width: 20vh;
+    cursor: pointer;
+    border-radius: 20px;
+}

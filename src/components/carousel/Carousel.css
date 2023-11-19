@@ -1,0 +1,24 @@
+.my-profiles {
+  font-size: 2em;
+  font-weight: 700;
+  margin: 40px 0 0 10px;
+}
+
+.slick-slide>div {
+  margin: 0 10px;
+}
+
+.offer{
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .slick-slider {
+    max-width: 90%;
+  }
+  
+  .custom-height {
+    height: 520px;
+    margin-bottom: 50px;
+  }
+}
