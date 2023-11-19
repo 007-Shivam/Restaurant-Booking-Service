@@ -1,5 +1,4 @@
 import React from 'react';
-import Home from '../../pages/Home';
 
 export default function ThankYou() {
 
@@ -15,7 +14,7 @@ export default function ThankYou() {
                         <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                     <h1 className="text-4xl font-bold font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-500">Thank You !</h1>
-                    <p>Thank you for your interest! Check your email for a link to the guide.</p>
+                    <p>Booking confirmed. Thank you for your interest! Check your email for confirmation.</p>
                     <a
                         onClick={handleHomeClick}
                         className="inline-flex items-center px-4 py-2 text-white bg-indigo-600 border border-indigo-600 rounded rounded-full hover:bg-indigo-700 focus:outline-none focus:ring">
@@ -24,7 +23,7 @@ export default function ThankYou() {
                             <path stroke-linecap="round" stroke-linejoin="round" d="M7 16l-4-4m0 0l4-4m-4 4h18" />
                         </svg>
                         <span className="text-sm font-medium">
-                            Home
+                            Back
                         </span>
                     </a>
                 </div>

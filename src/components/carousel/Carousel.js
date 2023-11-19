@@ -3,13 +3,16 @@ import './Carousel.css'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+
 import ThankYou from '../thankyou/ThankYou';
 
-
-import Res from '../../assets/res.jpg'
-import Dish from '../../assets/dish.jpg'
-
-
+import JapaneseRes from '../../assets/restaurant/japanese-res.jpg'
+import MexicanRes from '../../assets/restaurant/mexican-res.jpg'
+import ItalianRes from '../../assets/restaurant/italian-res.jpg'
+import JapaneseOffer from '../../assets/offer/japanese-offer.jpg'
+import MexicanOffer from '../../assets/offer/mexican-offer.jpg'
+import ItalianOffer from '../../assets/offer/italian-offer.jpg'
+import Offer from '../../assets/offer.gif'
 
 export default function Carousel() {
   const [settings, setSettings] = useState({
@@ -51,18 +54,19 @@ export default function Carousel() {
 
   const [showThanks, setshowThanks] = useState(false);
 
-    const handleBookClick = () => {
-      setshowThanks(true);
-    };
-  
-    if (showThanks) {
-      return <ThankYou />;
-    }
+  const handleBookClick = () => {
+    setshowThanks(true);
+  };
+
+  if (showThanks) {
+    return <ThankYou />;
+  }
 
   return (
     <div className='w-3/4 m-auto mb-20'>
       <div className="my-prof-div">
         <p className="my-profiles">Today's Special Offers</p>
+        <img className='offer-gif' src={Offer} />
       </div>
 
       <div>
@@ -96,44 +100,47 @@ export default function Carousel() {
 
 const data = [
   {
-    name: `Eye State Prediction`,
-    img: Res,
-    offerImg: Dish,
+    name: `Tokyo Teppanyaki`,
+    img: JapaneseRes,
+    offerImg: JapaneseOffer,
     review: `123 Elm Street,
-    Cityville, Stateland,
-    ZIP Code: 12345-6789,
-    Countryland.`,
-    offerName: `Flat 80% off on all starters.`,
+      Cityville, Stateland,
+      ZIP Code: 12345-6789,
+      Countryland.`,
+    offerName: `Buy 1 Shushi get 1 FREE.`,
+    id: 'japanese'
   },
   {
-    name: `Eye State Prediction`,
-    img: Res,
-    offerImg: Dish,
+    name: `Bella Cucina`,
+    img: ItalianRes,
+    offerImg: ItalianOffer,
     review: `123 Elm Street,
-    Cityville, Stateland,
-    ZIP Code: 12345-6789,
-    Countryland.`,
-    offerName: `Flat 80% off on all starters.`,
+      Cityville, Stateland,
+      ZIP Code: 12345-6789,
+      Countryland.`,
+    offerName: `Get small-pizza at flat Rs.100.`,
+    id: 'italian'
   },
   {
-    name: `Eye State Prediction`,
-    img: Res,
-    offerImg: Dish,
+    name: `Chiles & Charros`,
+    img: MexicanRes,
+    offerImg: MexicanOffer,
     review: `123 Elm Street,
-    Cityville, Stateland,
-    ZIP Code: 12345-6789,
-    Countryland.`,
-    offerName: `Flat 80% off on all starters.`,
+      Cityville, Stateland,
+      ZIP Code: 12345-6789,
+      Countryland.`,
+    offerName: `Special offers on Tacos.`,
+    id: 'mexican'
   },
   {
-    name: `Eye State Prediction`,
-    img: Res,
-    offerImg: Dish,
+    name: `Amore Eats`,
+    img: ItalianRes,
+    offerImg: ItalianOffer,
     review: `123 Elm Street,
-    Cityville, Stateland,
-    ZIP Code: 12345-6789,
-    Countryland.`,
-    offerName: `Flat 80% off on all starters.`,
+      Cityville, Stateland,
+      ZIP Code: 12345-6789,
+      Countryland.`,
+    offerName: `Get small-pizza at flat Rs.100.`,
+    id: 'italian'
   },
-
 ];

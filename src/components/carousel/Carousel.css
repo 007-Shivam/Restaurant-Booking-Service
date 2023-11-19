@@ -1,24 +1,53 @@
+.my-prof-div {
+  display: flex;
+}
+
 .my-profiles {
   font-size: 2em;
   font-weight: 700;
   margin: 40px 0 0 10px;
 }
 
+.offer-gif {
+  margin: 50px 20px;
+  width: 15vh;
+}
+
 .slick-slide>div {
   margin: 0 10px;
 }
 
-.offer{
+.offer {
   display: flex;
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
 }
 
 @media (max-width: 768px) {
+  .my-prof-div {
+    display: grid;
+  }
+
+  .offer-gif {
+    margin: 20px 50px;
+    width: 25vh;
+  }
+
   .slick-slider {
     max-width: 90%;
   }
-  
+
   .custom-height {
     height: 520px;
     margin-bottom: 50px;
+  }
+
+  .my-profiles {
+    text-align: center;
   }
 }

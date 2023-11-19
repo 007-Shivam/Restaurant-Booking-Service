@@ -1,12 +1,5 @@
-.all-cards {
-    width: auto;
-    height: 100vh;
-    margin: 30px;
-}
-
 .card-container {
-    /* background-color: bisque; */
-    height: 62vh;
+    height: auto;
     width: 50vh;
     padding: 10px;
     box-sizing: border-box;
@@ -51,4 +44,27 @@
     width: 20vh;
     cursor: pointer;
     border-radius: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    .all {
+        margin: 70px;
+    }
+
+    .card-container {
+        height: auto;
+        width: 33vh;
+    }
+
+    .logo {
+        height: 20vh;
+        width: 20vh;
+        margin-top: 10px;
+    }
+
+    .offer-img {
+        width: 50px;
+        height: 55px;
+        margin: 18px 5px;
+    }
 }
