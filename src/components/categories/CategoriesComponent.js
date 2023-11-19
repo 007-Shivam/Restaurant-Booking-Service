@@ -15,43 +15,43 @@ export default function CategoriesComponent({ onSelectCategory, onShowAll }) {
         <div className='categories-container'>
             <div className='m-5'>
                 <button onClick={() => onSelectCategory('indian')}>
-                    <img className='cat-logo h-40 w-50 rounded-full hover:transform hover:scale-105 hover:transition duration-3000' src={Indian} alt='m-5' />
+                    <img className='cat-logo h-40 w-50 rounded-full hover:transform hover:scale-110 hover:transition duration-3000' src={Indian} alt='m-5' />
                 </button>
                 <p className='cuisine-title text-center text-xl font-semibold'>Indian</p>
             </div>
             <div className='m-5'>
                 <button onClick={() => onSelectCategory('chinese')}>
-                    <img className='cat-logo h-40 w-40 rounded-full hover:transform hover:scale-105 hover:transition duration-3000' src={Chinese} alt='m-5' />
+                    <img className='cat-logo h-40 w-40 rounded-full hover:transform hover:scale-110 hover:transition duration-3000' src={Chinese} alt='m-5' />
                 </button>
                 <p className='cuisine-title text-center text-xl font-semibold'>Chinese</p>
             </div>
             <div className='m-5'>
                 <button onClick={() => onSelectCategory('japanese')}>
-                    <img className='cat-logo h-40 w-40 rounded-full hover:transform hover:scale-105 hover:transition duration-3000' src={Japanese} alt='m-5' />
+                    <img className='cat-logo h-40 w-40 rounded-full hover:transform hover:scale-110 hover:transition duration-3000' src={Japanese} alt='m-5' />
                 </button>
                 <p className='cuisine-title text-center text-xl font-semibold'>Japanese</p>
             </div>
             <div className='m-5'>
                 <button onClick={() => onSelectCategory('mexican')}>
-                    <img className='cat-logo h-40 w-40 rounded-full hover:transform hover:scale-105 hover:transition duration-3000' src={Mexican} alt='m-5' />
+                    <img className='cat-logo h-40 w-40 rounded-full hover:transform hover:scale-110 hover:transition duration-3000' src={Mexican} alt='m-5' />
                 </button>
                 <p className='cuisine-title text-center text-xl font-semibold'>Mexican</p>
             </div>
             <div className='m-5'>
                 <button onClick={() => onSelectCategory('italian')}>
-                    <img className='cat-logo h-40 w-40 rounded-full hover:transform hover:scale-105 hover:transition duration-3000' src={Ilalian} alt='m-5' />
+                    <img className='cat-logo h-40 w-40 rounded-full hover:transform hover:scale-110 hover:transition duration-3000' src={Ilalian} alt='m-5' />
                 </button>
                 <p className='cuisine-title text-center text-xl font-semibold'>Italian</p>
             </div>
             <div className='m-5'>
                 <button onClick={() => onSelectCategory('french')}>
-                    <img className='cat-logo h-40 w-40 rounded-full hover:transform hover:scale-105 hover:transition duration-3000' src={French} alt='m-5' />
+                    <img className='cat-logo h-40 w-40 rounded-full hover:transform hover:scale-110 hover:transition duration-3000' src={French} alt='m-5' />
                 </button>
                 <p className='cuisine-title text-center text-xl font-semibold'>French</p>
             </div>
             <div className='m-5'>
                 <button onClick={() => onShowAll()}>
-                    <img className='cat-logo h-40 w-40 rounded-full hover:transform hover:scale-105 hover:transition duration-3000' src={All} alt='m-5' />
+                    <img className='cat-logo h-40 w-40 rounded-full hover:transform hover:scale-110 hover:transition duration-3000' src={All} alt='m-5' />
                 </button>
                 <p className='cuisine-title text-center text-xl font-semibold'>SHOW ALL</p>
             </div>
